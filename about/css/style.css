@@ -47,7 +47,7 @@ body {
 	vertical-align: middle;
 }
 
-.icon {
+.icon_face {
 	position: absolute;
 	background-image: url("../images/face.JPG");  /* 表示する画像 */
     width:  250px;       /* ※縦横を同値に */
@@ -70,9 +70,17 @@ img1 {
 #aboutme {
 	display: table;
 	width: 100%;
-	height: 60vh;
+	height: 50vh;
 	padding-top: 15vh;
-	background-size: cover;
+}
+
+#games{
+	display: table;
+	width: 100%;
+	height: 80vh;
+	padding-top: 5vh;
+	background-color: #ac74d1;
+	text-align: center;
 }
 
 .heading {
@@ -82,7 +90,7 @@ img1 {
 	display: table;
 }
 
-h2 {
+h2gray {
 	color: #666;
 	font-size: 60px;
 	font-weight: 900;
@@ -91,7 +99,16 @@ h2 {
 	vertical-align: middle;
 }
 
-.text {
+h2white{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 900;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.textgray {
 	height: 100px;
 	width: 100%;
 	padding-top: 10px;
@@ -102,6 +119,35 @@ h2 {
 	text-align: center;
 	display: table;
 	line-height: 35px;
+}
+
+.textwhite {
+	height: 100px;
+	width: 100%;
+	padding-top: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	position: relative;
+	text-align: center;
+	display: table;
+	line-height: 35px;
+}
+
+.icons_line li{
+	display:inline-block;
+	margin:10px 10px;
+}
+
+.icons_line li img{
+	width: 15vw;
+	height: 15vw;
+	border-radius: 20%;
+	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
+	-moz-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
+	-o-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
+	-ms-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
 }
 
 .effect_fadeT {
@@ -120,6 +166,17 @@ h2 {
 }
 	
 .effect_fade.effect_scroll {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+
+.effect_fadeI {
+	opacity : 0;
+	transform : translate(0, 100px) ;
+	transition : all 1000ms;
+}
+	
+.effect_fadeI.effect_scroll {
 	opacity : 1;
 	transform : translate(0, 0);
 }
