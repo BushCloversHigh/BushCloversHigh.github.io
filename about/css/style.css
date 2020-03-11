@@ -1,13 +1,15 @@
-html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
+html, body, div, span, iframe, h1, h2, h3, h4, h5, p, a, img, ul, li, table, tr, th, td, tbody, footer, header, main, nav, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	list-style: none;
 	text-decoration: none;
 }
+
 body {
 	font-family: 'Roboto', sans-serif, "ヒラギノ角ゴ Pro W6", "ヒラギノ角ゴ Pro W3";
 }
+
 body {
 	width: 100%;
 }
@@ -23,10 +25,10 @@ body {
 	width: 100%;
 	height: 120vh;
 	position: relative;
-	background:  url("../images/yozora.png") no-repeat;
+	background: url("../images/yozora.png") no-repeat;
 	background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
+	background-size: cover;
+	background-position: top;
 }
 
 #main_title {
@@ -40,7 +42,7 @@ body {
 	margin: auto;
 	color: #fff;
 	font-family: 'Playfair Display', serif;
-	font-size: 6vw;
+	font-size: 150px;
 	font-weight: bold;
 	text-align: center;
 	display: table-cell;
@@ -49,11 +51,16 @@ body {
 
 .icon_face {
 	position: absolute;
-	background-image: url("../images/face.JPG");  /* 表示する画像 */
-    width:  250px;       /* ※縦横を同値に */
-    height: 250px;       /* ※縦横を同値に */
-    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-	background-position: center;  /* 横長画像の左上を基準に表示 */
+	background-image: url("../images/face.JPG");
+	/* 表示する画像 */
+	width: 250px;
+	/* ※縦横を同値に */
+	height: 250px;
+	/* ※縦横を同値に */
+	border-radius: 50%;
+	/* 角丸半径を50%にする(=円形にする) */
+	background-position: center;
+	/* 横長画像の左上を基準に表示 */
 	background-size: cover;
 	border: 9px solid #a886cf;
 }
@@ -69,16 +76,17 @@ img1 {
 
 #aboutme {
 	display: table;
+	text-align: center;
 	width: 100%;
 	height: 50vh;
 	padding-top: 15vh;
 }
 
-#games{
+#games {
 	display: table;
 	width: 100%;
-	height: 80vh;
-	padding-top: 5vh;
+	height: 55vw;
+	padding-top: 5vw;
 	background-color: #ac74d1;
 	text-align: center;
 }
@@ -99,7 +107,7 @@ h2gray {
 	vertical-align: middle;
 }
 
-h2white{
+h2white {
 	color: #fff;
 	font-size: 60px;
 	font-weight: 900;
@@ -109,7 +117,7 @@ h2white{
 }
 
 .textgray {
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	padding-top: 10px;
 	color: #777;
@@ -134,49 +142,83 @@ h2white{
 	line-height: 35px;
 }
 
-.icons_line li{
-	display:inline-block;
-	margin:10px 10px;
+.icons_line li {
+	display: inline-block;
+	position: relative;
+	margin: 1vw 1vw;
 }
 
-.icons_line li img{
+.icons_line li img {
 	width: 15vw;
 	height: 15vw;
 	border-radius: 20%;
-	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
-	-moz-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
-	-o-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
-	-ms-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
-	filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
+	-moz-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
+	-o-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
+	-ms-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
+	filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
+	transition: all 200ms ease;
+}
+
+.icons_line li figcap {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 20%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.25vw;
+	font-style: italic;
+	transition: all 200ms ease;
+}
+
+.icons_line li:hover img {
+	transform: scale(1.07);
+	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(30%);
+	-moz-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(30%);
+	-o-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(30%);
+	-ms-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(30%);
+	filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(30%);
+	transition: all 200ms ease;
+}
+
+.icons_line li:hover figcap{
+	opacity: 1;
+	transform: scale(1.07);
 }
 
 .effect_fadeT {
-	opacity : 0;
-	transition : all 5000ms;
+	opacity: 0;
+	transition: all 5000ms;
 }
-	
+
 .effect_fadeT.effect_scroll {
-	opacity : 1;
+	opacity: 1;
 }
 
 .effect_fade {
-	opacity : 0;
-	transform : translate(0, 45px);
-	transition : all 2000ms;
+	opacity: 0;
+	transform: translate(0, 45px);
+	transition: all 2000ms;
 }
-	
+
 .effect_fade.effect_scroll {
-	opacity : 1;
-	transform : translate(0, 0);
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .effect_fadeI {
-	opacity : 0;
-	transform : translate(0, 100px) ;
-	transition : all 1000ms;
+	opacity: 0;
+	transform: translate(0, 45px);
+	transition: all 1000ms;
 }
-	
+
 .effect_fadeI.effect_scroll {
-	opacity : 1;
-	transform : translate(0, 0);
+	opacity: 1;
+	transform: translate(0, 0);
 }

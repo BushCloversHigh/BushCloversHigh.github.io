@@ -17,9 +17,9 @@
                 'background-position-y': -scrollPosi / 3 + 'px'
             }, 100);
             scroll_effect();
-            scroll_effectI();
         });
     }
+
 
     function scroll_effect() {
         $('.effect_fade').each(function (i) {
@@ -28,22 +28,6 @@
             var windowHeight = $(window).height();
             if (scroll > elemPos - windowHeight + 200) {
                 $(this).addClass('effect_scroll');
-            } else {
-                $(this).removeClass('effect_scroll');
-            }
-        });
-    }
-
-    function scroll_effectI() {
-        $('.effect_fadeI').each(function (i) {
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight + 200) {
-                $(this).delay(700 + 300 * i).queue(function (next) {
-                    $(this).addClass('effect_scroll');
-                    next();
-                });
             } else {
                 $(this).removeClass('effect_scroll');
             }
