@@ -53,15 +53,10 @@ body {
 .icon_face {
 	position: absolute;
 	background-image: url("../images/face.JPG");
-	/* 表示する画像 */
 	width: 250px;
-	/* ※縦横を同値に */
 	height: 250px;
-	/* ※縦横を同値に */
 	border-radius: 50%;
-	/* 角丸半径を50%にする(=円形にする) */
 	background-position: center;
-	/* 横長画像の左上を基準に表示 */
 	background-size: cover;
 	border: 9px solid #a886cf;
 }
@@ -111,7 +106,7 @@ h2white {
 .textgray {
 	height: 50px;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 1vw;
 	color: #777;
 	font-size: 20px;
 	font-weight: 500;
@@ -137,15 +132,15 @@ h2white {
 #games {
 	display: table;
 	width: 100%;
-	height: 55vw;
 	padding-top: 3vw;
+	padding-bottom: 5vw;
 	background-color: #ac74d1;
 	text-align: center;
 }
 
 
 .icons_line{
-	padding-top: 40px;
+	padding-top: 2vw;
 }
 
 .icons_line li {
@@ -155,8 +150,8 @@ h2white {
 }
 
 .icons_line li img {
-	width: 15vw;
-	height: 15vw;
+	width: 280px;
+	height: 280px;
 	border-radius: 20%;
 	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
 	-moz-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
@@ -167,8 +162,8 @@ h2white {
 }
 
 .icons_line li figcap {
-	width: 15vw;
-	height: 15vw;
+	width: 280px;
+	height: 280px;
 	border-radius: 20%;
 	position: absolute;
 	top: 0;
@@ -178,7 +173,7 @@ h2white {
 	opacity: 0;
 	color: #fff;
 	text-align: center;
-	font-size: 1.25vw;
+	font-size: 20px;
 	/* font-style: italic; */
 	transition: all 200ms ease;
 }
@@ -202,12 +197,12 @@ h2white {
 	display: table;
 	text-align: center;
 	width: 100%;
-	height: 65vh;
-	padding-top: 5vh;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
 }
 
 .illust{
-	padding-top: 40px;
+	padding-top: 3vw;
 }
 
 .illust li {
@@ -217,8 +212,8 @@ h2white {
 }
 
 .illust li img {
-	width: 26vw;
-	height: 20vw;
+	width: 520px;
+	height: 400px;
 	border-radius: 5% 5% 5% 5% / 6.5% 6.5% 6.5% 6.5%;
 	object-fit: cover;
 	object-position: top;
@@ -231,8 +226,8 @@ h2white {
 }
 
 .illust li figcap {
-	width: 26vw;
-	height: 20vw;
+	width: 520px;
+	height: 400px;
 	border-radius: 20%;
 	position: absolute;
 	top: 0;
@@ -242,7 +237,7 @@ h2white {
 	opacity: 0;
 	color: #fff;
 	text-align: center;
-	font-size: 1.25vw;
+	font-size: 20px;
 	/* font-style: italic; */
 	transition: all 200ms ease;
 }
@@ -267,13 +262,13 @@ h2white {
 	display: table;
 	text-align: center;
 	width: 100%;
-	height: 65vh;
 	background-color: #ac74d1;
-	padding-top: 5vh;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
 }
 
 .model{
-	padding-top: 30px;
+	padding-top: 3vw;
 }
 
 .model li {
@@ -283,8 +278,8 @@ h2white {
 }
 
 .model li img {
-	width: 26vw;
-	height: 20vw;
+	width: 520px;
+	height: 400px;
 	border-radius: 5% 5% 5% 5% / 6.5% 6.5% 6.5% 6.5%;
 	object-fit: cover;
 	object-position: top;
@@ -297,8 +292,8 @@ h2white {
 }
 
 .model li figcap {
-	width: 26vw;
-	height: 20vw;
+	width: 520px;
+	height: 400px;
 	border-radius: 20%;
 	position: absolute;
 	top: 0;
@@ -308,7 +303,7 @@ h2white {
 	opacity: 0;
 	color: #fff;
 	text-align: center;
-	font-size: 1.25vw;
+	font-size: 20px;
 	/* font-style: italic; */
 	transition: all 200ms ease;
 }
@@ -332,21 +327,21 @@ h2white {
 	display: table;
 	text-align: center;
 	width: 100%;
-	height: 60vh;
-	padding-top: 5vh;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
 }
 
 #accounts {
 	display: table;
 	text-align: center;
 	width: 100%;
-	height: 100vh;
 	background-color: #6e5b7a;
-	padding-top: 5vh;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
 }
 
 .acount{
-	padding-top: 40px;
+	padding-top: 3vw;
 }
 
 .acount li {
@@ -356,8 +351,8 @@ h2white {
 }
 
 .acount li img {
-	width: 15vw;
-	height: 15vw;
+	width: 300px;
+	height: 300px;
 	border-radius: 20%;
 	object-fit: cover;
 	object-position: top;
@@ -365,8 +360,8 @@ h2white {
 }
 
 .acount li .yoko {
-	width: 20vw;
-	height: 10vw;
+	width: 500px;
+	height: 250px;
 	border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
 	object-fit: cover;
 	object-position: top;
@@ -375,15 +370,16 @@ h2white {
 
 footer{
 	width: 100%;
-	height: 5vh;
 	background-color: #fff;
 	display: table;
 	text-align: center;
-	padding-top: 1vh;
+	padding-top: 20vh;
+	padding-bottom: 5vh;
 }
 
 footer p{
-	color: #666;
+	color: #6e5b7a;
+	font-size: 18px;
 }
 
 .effect_fadeT {
