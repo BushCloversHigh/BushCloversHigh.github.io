@@ -38,7 +38,7 @@ body {
 	bottom: 30vh;
 	left: 0;
 	width: 80%;
-	height: 85px;
+	height: 200px;
 	margin: auto;
 	color: #fff;
 	font-family: 'Playfair Display', serif;
@@ -48,6 +48,36 @@ body {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
+	background: linear-gradient(211deg, #fdff82, #f59bff);
+	background-size: 400% 400%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: GradationAnim 10s linear infinite;
+	-moz-animation: GradationAnim 10s linear infinite;
+	-o-animation: GradationAnim 10s linear infinite;
+	animation: GradationAnim 10s linear infinite;
+}
+
+@-webkit-keyframes GradationAnim {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@-moz-keyframes GradationAnim {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@-o-keyframes GradationAnim {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@keyframes GradationAnim {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
 }
 
 .icon_face {
@@ -86,7 +116,7 @@ img1 {
 }
 
 h2gray {
-	color: #666;
+	color: #808080;
 	font-size: 60px;
 	font-weight: 900;
 	text-align: center;
@@ -107,7 +137,7 @@ h2white {
 	height: 50px;
 	width: 100%;
 	padding-top: 1vw;
-	color: #777;
+	color: #888;
 	font-size: 20px;
 	font-weight: 500;
 	position: relative;
@@ -138,8 +168,7 @@ h2white {
 	text-align: center;
 }
 
-
-.icons_line{
+.icons_line {
 	padding-top: 2vw;
 }
 
@@ -188,7 +217,7 @@ h2white {
 	transition: all 200ms ease;
 }
 
-.icons_line li:hover figcap{
+.icons_line li:hover figcap {
 	opacity: 1;
 	transform: scale(1.07);
 }
@@ -201,7 +230,7 @@ h2white {
 	padding-bottom: 5vw;
 }
 
-.illust{
+.illust {
 	padding-top: 3vw;
 }
 
@@ -252,11 +281,10 @@ h2white {
 	transition: all 200ms ease;
 }
 
-.illust li:hover figcap{
+.illust li:hover figcap {
 	opacity: 1;
 	transform: scale(1.07);
 }
-
 
 #modelings {
 	display: table;
@@ -267,7 +295,7 @@ h2white {
 	padding-bottom: 5vw;
 }
 
-.model{
+.model {
 	padding-top: 3vw;
 }
 
@@ -318,7 +346,7 @@ h2white {
 	transition: all 200ms ease;
 }
 
-.model li:hover figcap{
+.model li:hover figcap {
 	opacity: 1;
 	transform: scale(1.07);
 }
@@ -340,7 +368,7 @@ h2white {
 	padding-bottom: 5vw;
 }
 
-.acount{
+.acount {
 	padding-top: 3vw;
 }
 
@@ -378,7 +406,7 @@ h2white {
 	transition: all 200ms ease;
 }
 
-footer{
+footer {
 	width: 100%;
 	background-color: #fff;
 	display: table;
@@ -387,7 +415,7 @@ footer{
 	padding-bottom: 5vh;
 }
 
-footer p{
+footer p {
 	color: #6e5b7a;
 	font-size: 18px;
 }
