@@ -44,6 +44,7 @@ body {
 	font-family: 'Playfair Display', serif;
 	font-size: 150px;
 	font-weight: bold;
+	font-style: italic;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
@@ -80,15 +81,6 @@ img1 {
 	width: 100%;
 	height: 50vh;
 	padding-top: 15vh;
-}
-
-#games {
-	display: table;
-	width: 100%;
-	height: 55vw;
-	padding-top: 5vw;
-	background-color: #ac74d1;
-	text-align: center;
 }
 
 .heading {
@@ -130,7 +122,7 @@ h2white {
 }
 
 .textwhite {
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	padding-top: 10px;
 	color: #fff;
@@ -140,6 +132,20 @@ h2white {
 	text-align: center;
 	display: table;
 	line-height: 35px;
+}
+
+#games {
+	display: table;
+	width: 100%;
+	height: 55vw;
+	padding-top: 3vw;
+	background-color: #ac74d1;
+	text-align: center;
+}
+
+
+.icons_line{
+	padding-top: 40px;
 }
 
 .icons_line li {
@@ -173,7 +179,7 @@ h2white {
 	color: #fff;
 	text-align: center;
 	font-size: 1.25vw;
-	font-style: italic;
+	/* font-style: italic; */
 	transition: all 200ms ease;
 }
 
@@ -196,10 +202,13 @@ h2white {
 	display: table;
 	text-align: center;
 	width: 100%;
-	height: 60vh;
+	height: 65vh;
 	padding-top: 5vh;
 }
 
+.illust{
+	padding-top: 40px;
+}
 
 .illust li {
 	display: inline-block;
@@ -210,6 +219,7 @@ h2white {
 .illust li img {
 	width: 26vw;
 	height: 20vw;
+	border-radius: 5% 5% 5% 5% / 6.5% 6.5% 6.5% 6.5%;
 	object-fit: cover;
 	object-position: top;
 	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
@@ -233,7 +243,7 @@ h2white {
 	color: #fff;
 	text-align: center;
 	font-size: 1.25vw;
-	font-style: italic;
+	/* font-style: italic; */
 	transition: all 200ms ease;
 }
 
@@ -262,6 +272,9 @@ h2white {
 	padding-top: 5vh;
 }
 
+.model{
+	padding-top: 30px;
+}
 
 .model li {
 	display: inline-block;
@@ -272,6 +285,7 @@ h2white {
 .model li img {
 	width: 26vw;
 	height: 20vw;
+	border-radius: 5% 5% 5% 5% / 6.5% 6.5% 6.5% 6.5%;
 	object-fit: cover;
 	object-position: top;
 	-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)) brightness(100%);
@@ -295,7 +309,7 @@ h2white {
 	color: #fff;
 	text-align: center;
 	font-size: 1.25vw;
-	font-style: italic;
+	/* font-style: italic; */
 	transition: all 200ms ease;
 }
 
@@ -314,6 +328,63 @@ h2white {
 	transform: scale(1.07);
 }
 
+#blogs {
+	display: table;
+	text-align: center;
+	width: 100%;
+	height: 60vh;
+	padding-top: 5vh;
+}
+
+#accounts {
+	display: table;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #6e5b7a;
+	padding-top: 5vh;
+}
+
+.acount{
+	padding-top: 40px;
+}
+
+.acount li {
+	display: inline-block;
+	position: relative;
+	margin: 1vw 1vw;
+}
+
+.acount li img {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 20%;
+	object-fit: cover;
+	object-position: top;
+	transition: all 200ms ease;
+}
+
+.acount li .yoko {
+	width: 20vw;
+	height: 10vw;
+	border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+	object-fit: cover;
+	object-position: top;
+	transition: all 200ms ease;
+}
+
+footer{
+	width: 100%;
+	height: 5vh;
+	background-color: #fff;
+	display: table;
+	text-align: center;
+	padding-top: 1vh;
+}
+
+footer p{
+	color: #666;
+}
 
 .effect_fadeT {
 	opacity: 0;
