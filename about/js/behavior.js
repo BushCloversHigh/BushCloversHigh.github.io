@@ -27,10 +27,10 @@ function myclick() {
     
     function scroll_enable(Boolean) {
         if (Boolean) {
-            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
             $('html, body').css('overflow', 'visible');
         } else {
-            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
             $('html, body').css('overflow', 'hidden');
         }
     }
