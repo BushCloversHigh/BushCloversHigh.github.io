@@ -46,7 +46,7 @@ function myclick() {
     });
 
     $(function () {
-        setTimeout(stop_load, 10000);
+        setTimeout(stop_load, 15000);
     });
 
     function stop_load() {
