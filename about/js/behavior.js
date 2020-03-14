@@ -8,7 +8,6 @@ function myclick() {
             isMiniGame = true;
             $('#minigame').append('<div class="heading gray effect_fade"><h1>Secret</h1><h2>ゲームを隠しておきました。</h2><h2>見つけてくださりありがとうございます！</h2></div>');
             $('#minigame').append('<iframe id="gamescreen" src="/SuperMiniGame2/index.html" width="900" height="300" frameborder="0"></iframe>');
-            $('#minigame').append('<div class="text gray"><p>一度、ゲーム画面をクリックしてください。(そうしないと反応してくれません。)</p></div>');
             $("html,body").animate({scrollTop:$('footer p').offset().top});
         }
     }
