@@ -347,6 +347,10 @@ body {
 #copyright p {
 	font-size: 18px;
 	color: #6e5b7a;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .fadein.long {
