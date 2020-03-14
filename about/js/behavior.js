@@ -21,16 +21,20 @@ function myclick() {
 
     var isLoaded = false;
 
+    scroll_enable(false);
+
     function handleTouchMove(event) {
         event.preventDefault();
     }
     
     function scroll_enable(Boolean) {
         if (Boolean) {
-            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            $(window).off('.noScroll');
             $('html, body').css('overflow', 'visible');
         } else {
-            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
+            $(window).on('touchmove.noScroll', function(e) {
+                e.preventDefault();
+            });
             $('html, body').css('overflow', 'hidden');
         }
     }
