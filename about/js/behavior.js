@@ -45,7 +45,7 @@ function myclick() {
     });
 
     $(function () {
-        setTimeout(load_complete, 10000);
+        // setTimeout(load_complete, 10000);
     });
 
     function load_complete() {
