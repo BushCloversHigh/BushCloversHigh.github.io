@@ -1,8 +1,39 @@
+var clickNum = 0;
+var isMiniGame = false;
+function myclick() {
+    if (clickNum < 5) {
+        clickNum++;
+    } else {
+        if (!isMiniGame) {
+            isMiniGame = true;
+            $('#minigame').append('<div class="heading gray effect_fade"><h1>Secret</h1><h2>ゲームを隠しておきました。</h2><h2>見つけてくださりありがとうございます！</h2></div>');
+            $('#minigame').append('<iframe id="gamescreen" src="/SuperMiniGame2/index.html" width="900" height="300" frameborder="0"></iframe>');
+            $('#minigame').append('<div class="text gray"><p>一度、ゲーム画面をクリックしてください。(そうしないと反応してくれません。)</p></div>');
+            $("html,body").animate({scrollTop:$('footer p').offset().top});
+        }
+    }
+}
+
 (function ($) {
 
     'use strict';
 
     let scrollPosi = 0;
+
+    var isLoaded = false;
+
+    function handleTouchMove(event) {
+        event.preventDefault();
+    }
+    function scroll_enable(Boolean) {
+        if (Boolean) {
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            $('html, body').css('overflow', 'visible');
+        } else {
+            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
+            $('html, body').css('overflow', 'hidden');
+        }
+    }
 
     $(function () {
         var h = $(window).height();
@@ -10,24 +41,36 @@
         $('#loader-bg ,#loader').height(h).css('display', 'block');
     });
 
-    $(window).on('load', function () { //全ての読み込みが完了したら実行
-        setTimeout(stopload, 1000);
+    $(window).on('load', function () {
+        isLoaded = true;
+        setTimeout(load_complete, 1000);
     });
 
-    //10秒たったら強制的にロード画面を非表示
     $(function () {
-        setTimeout(stopload, 10000);
+        setTimeout(stop_load, 10000);
     });
 
-    function stopload() {
+    function stop_load() {
+        if (isLoaded) { return };
+        $('#page').css('display', 'block');
         $('#loader-bg').delay(1000).fadeOut(800);
         $('#loaderanim').delay(500).fadeOut(300);
         $('#nowloading').delay(500).fadeOut(300);
-        $('#nowloading').text('Completed!');
-        $('#page').css('display', 'block');
+        $('#nowloading').text('待たせてすみません。ロード中ですが表示します。');
+        setTimeout(start_scroll_effect, 1000);
     }
 
-    window.onload = function () {
+    function load_complete() {
+        $('#loader-bg').delay(1000).fadeOut(800);
+        $('#loaderanim').delay(500).fadeOut(300);
+        $('#nowloading').delay(500).fadeOut(300);
+        $('#nowloading').text('Completed !');
+        $('#page').css('display', 'block');
+        setTimeout(start_scroll_effect, 1000);
+    }
+
+    function start_scroll_effect() {
+        setTimeout(scroll_enable, 3000, true);
         var f = 0;
         for (f = 0; f < 10; f++) {
             $('#main_title').before('<div class="firefly"></div>');
@@ -42,7 +85,6 @@
             scroll_effect();
         });
     }
-
 
     function scroll_effect() {
         $('.effect_fade').each(function (i) {
