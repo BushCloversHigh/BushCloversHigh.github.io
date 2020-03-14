@@ -24,12 +24,13 @@ function myclick() {
     function handleTouchMove(event) {
         event.preventDefault();
     }
+    
     function scroll_enable(Boolean) {
         if (Boolean) {
-            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
             $('html, body').css('overflow', 'visible');
         } else {
-            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
             $('html, body').css('overflow', 'hidden');
         }
     }
