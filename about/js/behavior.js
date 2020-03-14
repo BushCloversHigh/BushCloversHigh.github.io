@@ -8,7 +8,7 @@ function myclick() {
             isMiniGame = true;
             $('#minigame').append('<div class="heading gray effect_fade"><h1>Secret</h1><h2>ゲームを隠しておきました。</h2><h2>見つけてくださりありがとうございます！</h2></div>');
             $('#minigame').append('<iframe id="gamescreen" src="/SuperMiniGame2/index.html" width="900" height="300" frameborder="0"></iframe>');
-            $("html,body").animate({scrollTop:$('footer p').offset().top});
+            $("html,body").animate({ scrollTop: $('footer p').offset().top });
         }
     }
 }
@@ -41,25 +41,16 @@ function myclick() {
     });
 
     $(window).on('load', function () {
-        isLoaded = true;
         setTimeout(load_complete, 1000);
     });
 
     $(function () {
-        setTimeout(stop_load, 15000);
+        setTimeout(load_complete, 10000);
     });
 
-    function stop_load() {
-        if (isLoaded) { return };
-        $('#page').css('display', 'block');
-        $('#loader-bg').delay(1000).fadeOut(800);
-        $('#loaderanim').delay(500).fadeOut(300);
-        $('#nowloading').delay(500).fadeOut(300);
-        $('#nowloading').text('待たせてすみません。ロード中ですが表示します。');
-        setTimeout(start_scroll_effect, 1000);
-    }
-
     function load_complete() {
+        if (isLoaded) { return };
+        isLoaded = true;
         $('#loader-bg').delay(1000).fadeOut(800);
         $('#loaderanim').delay(500).fadeOut(300);
         $('#nowloading').delay(500).fadeOut(300);
