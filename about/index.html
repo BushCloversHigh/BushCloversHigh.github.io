@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@geatnium" />
@@ -33,6 +34,22 @@
 	</div>
 
 	<div id="page" class="hidden">
+
+		<header id="#header" class="top_header">
+			<p class="header_logo"><a href="#">Geatnium</a></p>
+			<div class="header_menu">
+				<ul class="nav_menu">
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('aboutme')">About me</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('games')">Games</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('illustrations')">Illustrations</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('modelings')">3D Models</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('blogs')">Blogs</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('contacts')">SNS Contact</a></p>
+					<p class="nav_menu_item"><a id="menu_secret" class="cursor_pointer" onclick="clickScroll('secret')">　　　</a></p>
+				</ul>
+			</div>
+		</header>
+
 		<div id="main_image">
 			<div id="main_image_inner">
 				<div class="fadein up long" id="main_title">Geatnium</div>
@@ -40,209 +57,207 @@
 			</div>
 		</div>
 
-		<main>
-			<div id="aboutme">
-				<div class="text gray fadein up up">
-					<p>Geatnium (ギートニウム) / ギト</p>
-					<p>　</p>
-					<p>　</p>
-				</div>
-				<div class="heading gray">
-					<h1 class="fadein up up">About me</h1>
-				</div>
-				<div class="text gray">
-					<h1 class="fadein up">あ、どうも。ギトです。</h1>
-					<p class="fadein up">情報系の学科に通う、平凡な男子大学生。</p>
-					<p class="fadein up">趣味はゲーム開発。イラスト、3Dモデリングなどにも挑戦中。</p>
-					<p class="fadein up">思い立ったらとりあえず初めてみるのがモットー(たぶん)。</p>
-					<p class="fadein up">自称、行動力のある陰キャ。</p>
-				</div>
+		<div id="aboutme" class="unit white">
+			<div class="text gray fadein up">
+				<p>Geatnium (ギートニウム) / ギト</p>
+				<p>　</p>
+				<p>　</p>
 			</div>
-			<div id="games" class="unit purple">
-				<div class="heading white fadein up">
-					<h1>Games</h1>
-				</div>
-				<div class="text white">
-					<p class="fadein up">これまでに制作したゲーム</p>
-				</div>
-				<ul class="inline_blocks square dropshadow brightness">
-					<li class="fadein up">
-						<img src="images/games/umaumau.gif">
-						<a href="https://unityroom.com/games/connect_ceystals" target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>Connect Crystals
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/silsil.png">
-						<a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.wars_silsil"
-							target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>シルシルWars<br>〜銀のツインテール〜
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/backwards.gif">
-						<a href="https://unityroom.com/games/unity1week_backwards" target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>Backwards<br>〜後ろ向きに進むけど、<br>どれだけ回避できる？〜
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/ghost.png"><a
-							href="https://unityroom.com/games/unity1week_ghost_collector" target="_blank"
-							rel="noopener">
-							<figcap>
-								<br>　<br>Ghost Collector
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/runtube.png"><a
-							href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.runtube"
-							target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>RunTube
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/where_smartphone.png"><a
-							href="https://unityroom.com/games/unity1week_where_is_my_smartphone" target="_blank"
-							rel="noopener">
-							<figcap>
-								<br>　<br>スマホどこ行った？
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/10pigs.gif"><a href="https://unityroom.com/games/piglets_10"
-							target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>10ぴきのこぶた
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/fire.gif"><a href="https://unityroom.com/games/fighter-fire"
-							target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>Fire Fighter
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/girigiri.gif"><a
-							href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.girigiri"
-							target="_blank" rel="noopener">
-							<figcap>
-								<br>　<br>ギリギリまでForever
-							</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/games/walk.png"><a href="https://unityroom.com/games/wallust" target="_blank"
-							rel="noopener">
-							<figcap>
-								<br>　<br>歩いてお絵かき
-							</figcap>
-						</a>
-					</li>
-				</ul>
+			<div class="heading gray">
+				<h1 class="fadein up">About me</h1>
 			</div>
-
-			<div id="illustrations" class="unit white">
-				<div class="heading gray fadein up">
-					<h1>Illustrations</h1>
-				</div>
-				<div class="text gray">
-					<p class="fadein up">これまでに描いたイラスト作品</p>
-				</div>
-				<ul class="inline_blocks hrect dropshadow brightness">
-					<li class="fadein up">
-						<img src="images/illusts/yozoraO.png">
+			<div class="text gray">
+				<h1 class="fadein up">あ、どうも。ギトです。</h1>
+				<p class="fadein up">情報系の学科に通う、平凡な男子大学生。</p>
+				<p class="fadein up">趣味はゲーム開発。イラスト、3Dモデリングなどにも挑戦中。</p>
+				<p class="fadein up">思い立ったらとりあえず初めてみるのがモットー(たぶん)。</p>
+				<p class="fadein up">自称、行動力のある陰キャ。</p>
+			</div>
+		</div>
+		<div id="games" class="unit purple">
+			<div class="heading white fadein up">
+				<h1>Games</h1>
+			</div>
+			<div class="text white">
+				<p class="fadein up">これまでに制作したゲーム</p>
+			</div>
+			<ul class="inline_blocks square dropshadow brightness">
+				<li class="fadein up">
+					<img src="images/games/umaumau.gif">
+					<a href="https://unityroom.com/games/connect_ceystals" target="_blank" rel="noopener">
 						<figcap>
-							<br>　<br>夜空
+							<br>　<br>Connect Crystals
 						</figcap>
-						</a>
-					</li>
-					<li class="fadein up">
-						<img src="images/illusts/akiha.jpg">
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/silsil.png">
+					<a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.wars_silsil"
+						target="_blank" rel="noopener">
 						<figcap>
-							<br>　<br>イメージキャラクター <br>紅紫　秋葉
+							<br>　<br>シルシルWars<br>〜銀のツインテール〜
 						</figcap>
-					</li>
-				</ul>
-			</div>
-
-			<div id="modelings" class="unit purple">
-				<div class="heading white fadein up">
-					<h1>3D Models</h1>
-				</div>
-				<div class="text white">
-					<p class="fadein up">これまでに制作した3Dモデル</p>
-				</div>
-				<ul class="inline_blocks hrect dropshadow brightness">
-					<li class="fadein up">
-						<img src="images/models/akiha.jpeg">
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/backwards.gif">
+					<a href="https://unityroom.com/games/unity1week_backwards" target="_blank" rel="noopener">
 						<figcap>
-							<br>　<br>紅紫　秋葉 (3D)
+							<br>　<br>Backwards<br>〜後ろ向きに進むけど、<br>どれだけ回避できる？〜
 						</figcap>
-					</li>
-				</ul>
-			</div>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/ghost.png"><a href="https://unityroom.com/games/unity1week_ghost_collector"
+						target="_blank" rel="noopener">
+						<figcap>
+							<br>　<br>Ghost Collector
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/runtube.png"><a
+						href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.runtube"
+						target="_blank" rel="noopener">
+						<figcap>
+							<br>　<br>RunTube
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/where_smartphone.png"><a
+						href="https://unityroom.com/games/unity1week_where_is_my_smartphone" target="_blank"
+						rel="noopener">
+						<figcap>
+							<br>　<br>スマホどこ行った？
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/10pigs.gif"><a href="https://unityroom.com/games/piglets_10" target="_blank"
+						rel="noopener">
+						<figcap>
+							<br>　<br>10ぴきのこぶた
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/fire.gif"><a href="https://unityroom.com/games/fighter-fire" target="_blank"
+						rel="noopener">
+						<figcap>
+							<br>　<br>Fire Fighter
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/girigiri.gif"><a
+						href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.girigiri"
+						target="_blank" rel="noopener">
+						<figcap>
+							<br>　<br>ギリギリまでForever
+						</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/games/walk.png"><a href="https://unityroom.com/games/wallust" target="_blank"
+						rel="noopener">
+						<figcap>
+							<br>　<br>歩いてお絵かき
+						</figcap>
+					</a>
+				</li>
+			</ul>
+		</div>
 
-			<div id="blogs" class="unit white">
-				<div class="heading gray fadein up">
-					<h1>Blogs</h1>
-				</div>
-				<div class="text gray">
-					<p class="fadein up">Coming soon... (本当か？)</p>
-				</div>
+		<div id="illustrations" class="unit white">
+			<div class="heading gray fadein up">
+				<h1>Illustrations</h1>
 			</div>
+			<div class="text gray">
+				<p class="fadein up">これまでに描いたイラスト作品</p>
+			</div>
+			<ul class="inline_blocks hrect dropshadow brightness">
+				<li class="fadein up">
+					<img src="images/illusts/yozoraO.png">
+					<figcap>
+						<br>　<br>夜空
+					</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/illusts/akiha.jpg">
+					<figcap>
+						<br>　<br>イメージキャラクター <br>紅紫　秋葉
+					</figcap>
+				</li>
+			</ul>
+		</div>
 
-			<div id="accounts" class="unit darkpurple">
-				<div class="heading white fadein up">
-					<h1>SNS / Contact</h1>
-				</div>
-				<div class="text white">
-					<p class="fadein up">制作の進捗や日常の出来事、日々の鬱憤などをつぶやいてます。</p>
-					<p class="fadein up">何か話したいことやお問い合わせなどがあれば、TwitterのDMからご連絡ください。</p>
-				</div>
-				<ul class="inline_blocks">
-					<li class="fadein up">
-						<a href="https://twitter.com/geatnium" target="_black" rel="noopener">
-							<img src="images/Twitter_Logo_WhiteOnImage.svg">
-						</a>
-					</li>
-				</ul>
-				<div class="text white">
-					<p class="fadein up">　</p>
-					<p class="fadein up">匿名で質問したい方は、以下の Peing -質問箱- からどうぞ。</p>
-				</div>
-				<ul class="inline_blocks">
-					<li class="fadein up">
-						<a href="https://peing.net/ja/geatnium" target="_black" rel="noopener">
-							<img class="yoko" src="images/shitsumon.svg">
-						</a>
-					</li>
-				</ul>
+		<div id="modelings" class="unit purple">
+			<div class="heading white fadein up">
+				<h1>3D Models</h1>
 			</div>
+			<div class="text white">
+				<p class="fadein up">これまでに制作した3Dモデル</p>
+			</div>
+			<ul class="inline_blocks hrect dropshadow brightness">
+				<li class="fadein up">
+					<img src="images/models/akiha.jpeg">
+					<figcap>
+						<br>　<br>紅紫　秋葉 (3D)
+					</figcap>
+				</li>
+			</ul>
+		</div>
 
-			<div id="minigame" class="unit white">
+		<div id="blogs" class="unit white">
+			<div class="heading gray fadein up">
+				<h1>Blogs</h1>
 			</div>
+			<div class="text gray">
+				<p class="fadein up">Coming soon... (本当か？)</p>
+			</div>
+		</div>
 
-			<div id="copyright" class="unit white">
-				<ul class="inline_blocks">
-					<li class="cursor_pointer" onclick="myclick()">
-						<p>&copy; 2020 Geatnium</p>
-					</li>
-				</ul>
+		<div id="contacts" class="unit darkpurple">
+			<div class="heading white fadein up">
+				<h1>SNS / Contact</h1>
 			</div>
-		</main>
+			<div class="text white">
+				<p class="fadein up">制作の進捗や日常の出来事、日々の鬱憤などをつぶやいてます。</p>
+				<p class="fadein up">何か話したいことやお問い合わせなどがあれば、TwitterのDMからご連絡ください。</p>
+			</div>
+			<ul class="inline_blocks">
+				<li class="fadein up">
+					<a href="https://twitter.com/geatnium" target="_black" rel="noopener">
+						<img src="images/Twitter_Logo_WhiteOnImage.svg">
+					</a>
+				</li>
+			</ul>
+			<div class="text white">
+				<p class="fadein up">　</p>
+				<p class="fadein up">匿名で質問したい方は、以下の Peing -質問箱- からどうぞ。</p>
+			</div>
+			<ul class="inline_blocks">
+				<li class="fadein up">
+					<a href="https://peing.net/ja/geatnium" target="_black" rel="noopener">
+						<img class="yoko" src="images/shitsumon.svg">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="secret" class="unit white">
+		</div>
+
+		<div id="copyright" class="unit white">
+			<ul class="inline_blocks">
+				<li class="cursor_pointer" onclick="myclick()">
+					<p>&copy; 2020 Geatnium</p>
+				</li>
+			</ul>
+		</div>
 	</div>
 </body>
+
 </html>

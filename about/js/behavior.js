@@ -6,11 +6,16 @@ function myclick() {
     } else {
         if (!isMiniGame) {
             isMiniGame = true;
-            $('#minigame').append('<div class="heading gray fadein up"><h1>Secret</h1><h2>ゲームを隠しておきました。</h2><h2>見つけてくださりありがとうございます！</h2></div>');
-            $('#minigame').append('<iframe id="gamescreen" src="/SuperMiniGame2/index.html" width="900" height="300" frameborder="0"></iframe>');
+            $('#secret').append('<div class="heading gray fadein up"><h1>Secret</h1><h2>ゲームを隠しておきました。</h2><h2>見つけてくださりありがとうございます！</h2></div>');
+            $('#secret').append('<iframe id="gamescreen" src="/SuperMiniGame2/index.html" width="900" height="350" frameborder="0"></iframe>');
+            $('#menu_secret').text('Secret');
             $("html,body").animate({ scrollTop: $('#copyright p').offset().top });
         }
     }
+}
+
+function clickScroll(id){
+    $("html,body").animate({ scrollTop: $('#'+id).offset().top - 100 });
 }
 
 (function ($) {
@@ -93,5 +98,14 @@ function myclick() {
             }
         });
     }
+
+    $(window).scroll(function () {
+        scrollPosi = $(document).scrollTop();
+        if(scrollPosi > $(window).height() * 1.1){
+            $('.top_header').addClass('visible');
+        }else{
+            $('.top_header').removeClass('visible');
+        }
+    });
 
 })(jQuery);
