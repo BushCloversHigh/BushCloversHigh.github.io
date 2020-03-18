@@ -1,3 +1,5 @@
+var isLoaded = false;
+var isScrollable = false;
 var clickNum = 0;
 var isMiniGame = false;
 function myclick() {
@@ -14,8 +16,10 @@ function myclick() {
     }
 }
 
-function clickScroll(id){
-    $("html,body").animate({ scrollTop: $('#'+id).offset().top - 100 });
+function clickScroll(id) {
+    if (isScrollable) {
+        $("html,body").animate({ scrollTop: $('#' + id).offset().top - 175 });
+    }
 }
 
 (function ($) {
@@ -23,21 +27,20 @@ function clickScroll(id){
     'use strict';
 
     let scrollPosi = 0;
-
-    var isLoaded = false;
-
     scroll_enable(false);
 
     function handleTouchMove(event) {
         event.preventDefault();
     }
-    
+
     function scroll_enable(Boolean) {
         if (Boolean) {
+            isScrollable = true;
             $(window).off('.noScroll');
             $('html, body').css('overflow', 'visible');
         } else {
-            $(window).on('touchmove.noScroll', function(e) {
+            isScrollable = false;
+            $(window).on('touchmove.noScroll', function (e) {
                 e.preventDefault();
             });
             $('html, body').css('overflow', 'hidden');
@@ -101,9 +104,9 @@ function clickScroll(id){
 
     $(window).scroll(function () {
         scrollPosi = $(document).scrollTop();
-        if(scrollPosi > $(window).height() * 1.1){
+        if (scrollPosi > $(window).height() * 1.1) {
             $('.top_header').addClass('visible');
-        }else{
+        } else {
             $('.top_header').removeClass('visible');
         }
     });
