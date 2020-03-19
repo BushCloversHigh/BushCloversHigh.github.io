@@ -39,7 +39,8 @@
 
 		<div class="popup" id="js-popup">
 			<div class="popup-inner">
-				<div class="close-btn" id="js-close-btn" onclick="close_popup()"><img src="./images/nav/cancel.svg"></div>
+				<div class="close-btn" id="js-close-btn" onclick="close_popup()"><img src="./images/nav/cancel.svg">
+				</div>
 			</div>
 			<div class="black-background" id="js-black-bg" onclick="close_popup()"></div>
 		</div>
@@ -98,7 +99,7 @@
 			<ul class="inline_blocks square dropshadow brightness">
 				<li class="fadein up">
 					<img src="images/games/icon_low/umaumau.gif">
-					<a onclick="show_popup('connect_crystals')">
+					<a onclick="show_popup_game('connect_crystals')">
 						<figcap>
 							<br>　<br>Connect Crystals
 						</figcap>
@@ -106,7 +107,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/silsil.png">
-					<a onclick="show_popup('silsil')">
+					<a onclick="show_popup_game('silsil')">
 						<figcap>
 							<br>　<br>シルシルWars<br>〜銀のツインテール〜
 						</figcap>
@@ -114,7 +115,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/backwards.gif">
-					<a onclick="show_popup('backwards')">
+					<a onclick="show_popup_game('backwards')">
 						<figcap>
 							<br>　<br>Backwards<br>〜後ろ向きに進むけど、<br>どれだけ回避できる？〜
 						</figcap>
@@ -122,7 +123,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/ghost.png">
-					<a onclick="show_popup('ghost')">
+					<a onclick="show_popup_game('ghost')">
 						<figcap>
 							<br>　<br>Ghost Collector
 						</figcap>
@@ -130,7 +131,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/runtube.png">
-					<a onclick="show_popup('runtube')">
+					<a onclick="show_popup_game('runtube')">
 						<figcap>
 							<br>　<br>RunTube
 						</figcap>
@@ -138,7 +139,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/where_smartphone.png">
-					<a onclick="show_popup('wheresmapho')">
+					<a onclick="show_popup_game('wheresmapho')">
 						<figcap>
 							<br>　<br>スマホどこいった？
 						</figcap>
@@ -146,7 +147,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/10pigs.gif">
-					<a onclick="show_popup('10pigs')">
+					<a onclick="show_popup_game('10pigs')">
 						<figcap>
 							<br>　<br>10ぴきのこぶた
 						</figcap>
@@ -154,7 +155,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/fire.gif">
-					<a onclick="show_popup('fire')">
+					<a onclick="show_popup_game('fire')">
 						<figcap>
 							<br>　<br>Fire Fighter
 						</figcap>
@@ -162,7 +163,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/girigiri.gif">
-					<a onclick="show_popup('girigiri')">
+					<a onclick="show_popup_game('girigiri')">
 						<figcap>
 							<br>　<br>ギリギリまでForever
 						</figcap>
@@ -170,7 +171,7 @@
 				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/walk.png">
-					<a onclick="show_popup('walk')">
+					<a onclick="show_popup_game('walk')">
 						<figcap>
 							<br>　<br>歩いてお絵かき
 						</figcap>
@@ -188,16 +189,28 @@
 			</div>
 			<ul class="inline_blocks hrect dropshadow brightness">
 				<li class="fadein up">
-					<img src="images/illusts/yozoraO.png">
-					<figcap>
-						<br>　<br>夜空
-					</figcap>
+					<img src="images/illusts/yozora/yozoraO.png">
+					<a onclick="show_popup_illust('yozora')">
+						<figcap>
+							<br>　<br>夜空
+						</figcap>
+					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/illusts/akiha.jpg">
+					<img src="images/illusts/yuuhi/yuuhi.png">
+					<a onclick="show_popup_illust('yuuhi')">
 					<figcap>
-						<br>　<br>イメージキャラクター <br>紅紫　秋葉
+						<br>　<br>イメージキャラクター(1代目) <br>紅紫　夕陽
 					</figcap>
+					</a>
+				</li>
+				<li class="fadein up">
+					<img src="images/illusts/akiha/akiha.jpeg">
+					<a onclick="show_popup_illust('akiha')">
+					<figcap>
+						<br>　<br>イメージキャラクター(2代目) <br>紅紫　秋葉
+					</figcap>
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -211,16 +224,20 @@
 			</div>
 			<ul class="inline_blocks hrect dropshadow brightness">
 				<li class="fadein up">
-					<img src="images/models/akiha.jpeg">
+					<img src="images/models/akiha3D/akiha.jpeg">
+					<a onclick="show_popup_model('akiha3D')">
 					<figcap>
 						<br>　<br>紅紫　秋葉 (3D)
 					</figcap>
+					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/models/unc.gif">
+					<img src="images/models/unc/unc.gif">
+					<a onclick="show_popup_model('unc')">
 					<figcap>
 						<br>　<br>UNC (with DynamicBone)
 					</figcap>
+					</a>
 				</li>
 			</ul>
 		</div>

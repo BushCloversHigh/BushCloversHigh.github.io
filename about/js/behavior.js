@@ -45,11 +45,22 @@ function scroll_enable(Boolean) {
     }
 }
 
-var popup_id;
-function show_popup(id) {
+function show_popup_game(id) {
     scroll_enable(false);
     $('.popup').addClass('is-show');
-    $('.popup-inner').append('<iframe id="popup_window" src="./details/' + id + '.html" frameborder="0"></iframe>');
+    $('.popup-inner').append('<iframe id="popup_window" src="./details/games/' + id + '.html" frameborder="0"></iframe>');
+}
+
+function show_popup_illust(id) {
+    scroll_enable(false);
+    $('.popup').addClass('is-show');
+    $('.popup-inner').append('<iframe id="popup_window" src="./details/illusts/' + id + '.html" frameborder="0"></iframe>');
+}
+
+function show_popup_model(id) {
+    scroll_enable(false);
+    $('.popup').addClass('is-show');
+    $('.popup-inner').append('<iframe id="popup_window" src="./details/models/' + id + '.html" frameborder="0"></iframe>');
 }
 
 function close_popup() {
