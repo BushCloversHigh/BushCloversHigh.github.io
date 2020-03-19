@@ -79,6 +79,7 @@ body.fixed {
 	font-size: 20px;
 	text-decoration: none;
 	line-height: 30px;
+	user-select: none;
 	transition: all 500ms ease;
 }
 
