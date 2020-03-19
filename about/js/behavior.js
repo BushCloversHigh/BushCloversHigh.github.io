@@ -2,6 +2,7 @@ var isLoaded = false;
 var isScrollable = false;
 var clickNum = 0;
 var isMiniGame = false;
+
 function myclick() {
     if (clickNum < 5) {
         clickNum++;
@@ -22,30 +23,49 @@ function clickScroll(id) {
     }
 }
 
+function handleTouchMove(event) {
+    event.preventDefault();
+}
+
+var scrollPosition;
+
+function scroll_enable(Boolean) {
+    if (Boolean) {
+        isScrollable = true;
+        $(window).off('.noScroll');
+        $('body').removeClass('fixed').css({ 'top': 0 });
+        window.scrollTo(0, scrollPosition);
+    } else {
+        isScrollable = false;
+        $(window).on('touchmove.noScroll', function (e) {
+            e.preventDefault();
+        });
+        scrollPosition = $(window).scrollTop();
+        $('body').addClass('fixed').css({ 'top': -scrollPosition });
+    }
+}
+
+var popup_id;
+function show_popup(id) {
+    scroll_enable(false);
+    $('.popup').addClass('is-show');
+    $('.popup-inner').append('<iframe id="popup_window" src="./details/' + id + '.html" frameborder="0"></iframe>');
+}
+
+function close_popup() {
+    scroll_enable(true);
+    setTimeout(function () {
+        $('#popup_window').remove();
+    }, 600);
+    $('.popup').removeClass('is-show');
+}
+
+
 (function ($) {
 
     'use strict';
 
     let scrollPosi = 0;
-    scroll_enable(false);
-
-    function handleTouchMove(event) {
-        event.preventDefault();
-    }
-
-    function scroll_enable(Boolean) {
-        if (Boolean) {
-            isScrollable = true;
-            $(window).off('.noScroll');
-            $('html, body').css('overflow', 'visible');
-        } else {
-            isScrollable = false;
-            $(window).on('touchmove.noScroll', function (e) {
-                e.preventDefault();
-            });
-            $('html, body').css('overflow', 'hidden');
-        }
-    }
 
     $(function () {
         var h = $(window).height();
@@ -69,11 +89,12 @@ function clickScroll(id) {
         $('#nowloading').delay(500).fadeOut(300);
         $('#nowloading').text('Completed !');
         $('#page').css('display', 'block');
+        scroll_enable(false);
         setTimeout(start_scroll_effect, 1000);
     }
 
     function start_scroll_effect() {
-        setTimeout(scroll_enable, 3000, true);
+        setTimeout(scroll_enable, 1000, true);
         var f = 0;
         for (f = 0; f < 10; f++) {
             $('#main_title').before('<div class="firefly"></div>');

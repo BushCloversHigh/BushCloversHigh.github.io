@@ -6,11 +6,17 @@
 
 html, body {
 	background-color: #f3f3f3;
-	overflow: hidden;
 }
 
 body {
 	font-family: 'Roboto', "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro W6", sans-serif;
+}
+
+body.fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
 }
 
 .top_header {
@@ -31,7 +37,7 @@ body {
 	padding-left: 50px;
 }
 
-.nav_menu_item , .header_logo{
+.nav_menu_item, .header_logo {
 	user-select: none;
 }
 
@@ -42,6 +48,7 @@ body {
 
 .top_header .header_logo {
 	opacity: 0;
+	visibility: hidden;
 	font-family: 'Playfair Display', serif;
 	font-size: 50px;
 	font-style: italic;
@@ -77,6 +84,7 @@ body {
 
 .top_header.visible .header_logo {
 	opacity: 1;
+	visibility: visible;
 	font-family: 'Playfair Display', serif;
 	color: #555555;
 	font-size: 50px;
@@ -314,7 +322,7 @@ body {
 	transition: all 200ms ease;
 }
 
-.inline_blocks.dropshadow li img{
+.inline_blocks.dropshadow li img {
 	box-shadow: 3px 3px 7px #00000088;
 	transition: all 200ms ease;
 }
@@ -452,4 +460,73 @@ body {
 
 .fadein.up.effector {
 	transform: translateY(0);
+}
+
+.popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 600ms ease;
+}
+
+.popup.is-show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup-inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 750px;
+	height: 900px;
+	padding: 25px;
+	background-color: #f2f2f2;
+	z-index: 2500;
+	border-radius: 2%;
+	box-shadow: 10px 10px 100px #000000ff;
+}
+
+.popup-inner iframe {
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.popup-inner img {
+	width: 100%;
+}
+
+.close-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.close-btn img {
+	font-size: 20px;
+	color: #333;
+}
+
+.black-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000aa;
+	z-index: 1;
+	cursor: pointer;
 }

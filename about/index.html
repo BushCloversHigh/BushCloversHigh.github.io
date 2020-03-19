@@ -16,11 +16,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Geatnium</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/detail.css" rel="stylesheet" type="text/css">
 	<link href="css/firefly.css" rel="stylesheet" type="text/css">
 	<link href="css/loader.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="images/icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display|Roboto&display=swap"
 		rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/behavior.js"></script>
 </head>
@@ -35,17 +37,28 @@
 
 	<div id="page" class="hidden">
 
+		<div class="popup" id="js-popup">
+			<div class="popup-inner">
+				<div class="close-btn" id="js-close-btn" onclick="close_popup()"><img src="./images/nav/cancel.svg"></div>
+			</div>
+			<div class="black-background" id="js-black-bg" onclick="close_popup()"></div>
+		</div>
+
 		<header id="#header" class="top_header">
 			<p class="header_logo"><a href="#">Geatnium</a></p>
 			<div class="header_menu">
 				<ul class="nav_menu">
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('aboutme')">About me</a></p>
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('games')">Games</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('illustrations')">Illustrations</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('modelings')">3D Models</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer"
+							onclick="clickScroll('illustrations')">Illustrations</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('modelings')">3D Models</a>
+					</p>
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('blogs')">Blogs</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('contacts')">SNS/Contact</a></p>
-					<p class="nav_menu_item"><a id="menu_secret" class="cursor_pointer" onclick="clickScroll('secret')">　　　</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('contacts')">SNS/Contact</a>
+					</p>
+					<p class="nav_menu_item"><a id="menu_secret" class="cursor_pointer"
+							onclick="clickScroll('secret')">　　　</a></p>
 				</ul>
 			</div>
 		</header>
@@ -74,6 +87,7 @@
 				<p class="fadein up">自称、行動力のある陰キャ。</p>
 			</div>
 		</div>
+
 		<div id="games" class="unit purple">
 			<div class="heading white fadein up">
 				<h1>Games</h1>
@@ -83,84 +97,80 @@
 			</div>
 			<ul class="inline_blocks square dropshadow brightness">
 				<li class="fadein up">
-					<img src="images/games/low/umaumau.gif">
-					<a href="https://unityroom.com/games/connect_ceystals" target="_blank" rel="noopener">
+					<img src="images/games/icon_low/umaumau.gif">
+					<a onclick="show_popup('connect_crystals')">
 						<figcap>
 							<br>　<br>Connect Crystals
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/silsil.png">
-					<a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.wars_silsil"
-						target="_blank" rel="noopener">
+					<img src="images/games/icon_low/silsil.png">
+					<a onclick="show_popup('silsil')">
 						<figcap>
 							<br>　<br>シルシルWars<br>〜銀のツインテール〜
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/backwards.gif">
-					<a href="https://unityroom.com/games/unity1week_backwards" target="_blank" rel="noopener">
+					<img src="images/games/icon_low/backwards.gif">
+					<a onclick="show_popup('backwards')">
 						<figcap>
 							<br>　<br>Backwards<br>〜後ろ向きに進むけど、<br>どれだけ回避できる？〜
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/ghost.png"><a href="https://unityroom.com/games/unity1week_ghost_collector"
-						target="_blank" rel="noopener">
+					<img src="images/games/icon_low/ghost.png">
+					<a onclick="show_popup('ghost')">
 						<figcap>
 							<br>　<br>Ghost Collector
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/runtube.png"><a
-						href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.runtube"
-						target="_blank" rel="noopener">
+					<img src="images/games/icon_low/runtube.png">
+					<a onclick="show_popup('runtube')">
 						<figcap>
 							<br>　<br>RunTube
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/where_smartphone.png"><a
-						href="https://unityroom.com/games/unity1week_where_is_my_smartphone" target="_blank"
-						rel="noopener">
+					<img src="images/games/icon_low/where_smartphone.png">
+					<a onclick="show_popup('wheresmapho')">
 						<figcap>
-							<br>　<br>スマホどこ行った？
+							<br>　<br>スマホどこいった？
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/10pigs.gif"><a href="https://unityroom.com/games/piglets_10" target="_blank"
-						rel="noopener">
+					<img src="images/games/icon_low/10pigs.gif">
+					<a onclick="show_popup('10pigs')">
 						<figcap>
 							<br>　<br>10ぴきのこぶた
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/fire.gif"><a href="https://unityroom.com/games/fighter-fire" target="_blank"
-						rel="noopener">
+					<img src="images/games/icon_low/fire.gif">
+					<a onclick="show_popup('fire')">
 						<figcap>
 							<br>　<br>Fire Fighter
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/girigiri.gif"><a
-						href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.girigiri"
-						target="_blank" rel="noopener">
+					<img src="images/games/icon_low/girigiri.gif">
+					<a onclick="show_popup('girigiri')">
 						<figcap>
 							<br>　<br>ギリギリまでForever
 						</figcap>
 					</a>
 				</li>
 				<li class="fadein up">
-					<img src="images/games/low/walk.png"><a href="https://unityroom.com/games/wallust" target="_blank"
-						rel="noopener">
+					<img src="images/games/icon_low/walk.png">
+					<a onclick="show_popup('walk')">
 						<figcap>
 							<br>　<br>歩いてお絵かき
 						</figcap>
@@ -182,7 +192,6 @@
 					<figcap>
 						<br>　<br>夜空
 					</figcap>
-					</a>
 				</li>
 				<li class="fadein up">
 					<img src="images/illusts/akiha.jpg">
