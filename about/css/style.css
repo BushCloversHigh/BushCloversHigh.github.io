@@ -489,9 +489,9 @@ body.fixed {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 750px;
-	height: 900px;
-	padding: 25px;
+	width: 780px;
+	height: 80%;
+	padding: 30px;
 	background-color: #f2f2f2;
 	z-index: 2500;
 	border-radius: 2%;
