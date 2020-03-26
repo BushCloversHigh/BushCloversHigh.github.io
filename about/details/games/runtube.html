@@ -11,46 +11,92 @@
     　　
     <link rel="stylesheet" href="/slick/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="/slick/slick.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/slick/slick.min.js" type="text/javascript"></script>　　
-    <script src="/about/js/popup.js" type="text/javascript"></script>
 </head>
 
-<div id="runtube" class="popup_window_inner game_detail">
-    <div class="icon">
-        <img src="/about/images/games/icon_high/runtube.png">     <!-- ゲームのアイコン -->
-    </div>
-    <div class="title_genre">        <!-- タイトルとジャンル -->
-        <h1>RunTube</h1>
-        <p>カジュアル</p>
-    </div>
-    <div class="play_btn">
-        <a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.runtube" class="btn-border"
-            target="_blank" rel="noopener">GooglePlayで入手</a>     <!-- ゲームのリンク -->
-    </div>
-   
-    <div class="detail">       <!-- ゲームの詳細など -->
-        <div class="screenshot">
-            <ul class="slider as18_9">      <!-- スクリーンショット -->
-                <li><img src="/about/images/games/screenshots/runtube/sc1.png"></li>
-                <li><img src="/about/images/games/screenshots/runtube/sc2.png"></li>
-                <li><img src="/about/images/games/screenshots/runtube/sc3.png"></li>
-            </ul>
+<body>
+    <div id="runtube" class="popup_window_inner game_detail">
+        <div class="icon">
+            <img src="/about/images/games/icon_high/runtube.png"> <!-- ゲームのアイコン -->
         </div>
-        <h1>初めてリリースしたゲーム！！</h1>
-        <h2>コンセプト</h2>
-        <p>シンプルだけど地味にハマる、ハイスピードランゲーム！</p>
-        <h2>簡単な概要</h2>
-        <p>筒の中を突き進み、迫り来る障害物を回避するだけという非常にシンプルなゲームです。</p>
-        <h2>特徴・アピールポイント</h2>
-        <p>・操作が簡単<br>・画面スライドで左右移動か、スマホを傾けて左右移動か操作方法を選べる<br>・グラフィックが綺麗</p>
-        <h2>制作について</h2>
-        <p>使用ソフト/エンジン : Unity 2019.2 (現バージョン) , Unity 2017.? (前バージョン)</p>
-        <p>個人制作</p>
-        <p>制作期間 : Ver.1→3ヶ月(休日に少しづつ) , Ver.2(現状)→約1ヶ月 (帰宅後や休日に少しずつ)</p>
-        <a href="https://github.com/Geatnium/RunTube" target="_blank" rel="noopener"><p>Githubリポジトリ</p></a>
+        <div class="title_genre">
+            <!-- タイトルとジャンル -->
+            <h1>RunTube</h1>
+            <p>カジュアル</p>
+        </div>
+        <div class="play_btn">
+            <a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.runtube" class="btn-border"
+                target="_blank" rel="noopener">GooglePlayで入手</a> <!-- ゲームのリンク -->
+        </div>
+
+        <div class="detail">
+            <!-- ゲームの詳細など -->
+            <div class="screenshot">
+                <ul class="slider as18_9">
+                    <!-- スクリーンショット -->
+                    <li><img src="/about/images/games/screenshots/runtube/sc1.png"></li>
+                    <li><img src="/about/images/games/screenshots/runtube/sc2.png"></li>
+                    <li><img src="/about/images/games/screenshots/runtube/sc3.png"></li>
+                </ul>
+            </div>
+            <h1>初めてリリースしたゲーム！！</h1>
+            <h2>コンセプト</h2>
+            <p>シンプルだけど地味にハマる、ハイスピードランゲーム！</p>
+            <h2>簡単な概要</h2>
+            <p>筒の中を突き進み、迫り来る障害物を回避するだけという非常にシンプルなゲームです。</p>
+            <h2>特徴・アピールポイント</h2>
+            <p>・操作が簡単<br>・画面スライドで左右移動か、スマホを傾けて左右移動か操作方法を選べる<br>・グラフィックが綺麗</p>
+            <h2>制作について</h2>
+            <p>使用ソフト/エンジン : Unity 2019.2 (現バージョン) , Unity 2017.? (前バージョン)</p>
+            <p>個人制作</p>
+            <p>制作期間 : Ver.1→3ヶ月(休日に少しづつ) , Ver.2(現状)→約1ヶ月 (帰宅後や休日に少しずつ)</p>
+            <a href="https://github.com/Geatnium/RunTube" target="_blank" rel="noopener">
+                <p>Githubリポジトリ</p>
+            </a>
+        </div>
     </div>
-</div>
+    <script>
+        // var tag = document.createElement('script');
+        // tag.src = "https://www.youtube.com/iframe_api";
+        // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // var player;
+        // function onYouTubeIframeAPIReady() {
+        //     player = new YT.Player('movie', {
+        //         height: '315',
+        //         width: '560',
+        //         videoId: 'VGZMoe-NSQo',
+        //         events: {
+        //             'onStateChange': onPlayerStateChange
+        //         }
+        //     });
+        // }
+        // function onPlayerStateChange(event) {
+        //     if (event.data == YT.PlayerState.PLAYING) {
+        //         autoPlaySlider(false);
+        //     } else {
+        //         autoPlaySlider(true);
+        //     }
+        // }
+
+        $(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+
+        function autoPlaySlider(enable) {
+            $(function () {
+                if (enable) {
+                    $('.slider').slick('slickPlay');
+                } else {
+                    $('.slider').slick('slickPause');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

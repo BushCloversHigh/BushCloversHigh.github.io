@@ -92,32 +92,32 @@ body {
     margin-bottom: 20px;
 }
 
-.slider.as16_9 img{
+.slider.as16_9 img, .slider.as16_9 iframe{
     width: 600px;
     height: 337px;
 }
 
-.slider.as18_9 img{
+.slider.as18_9 img, .slider.as18_9 iframe{
     width: 600px;
     height: 300px;
 }
 
-.slider.as9_6 img{
+.slider.as9_6 img, .slider.as9_6 iframe{
     width: 600px;
     height: 400px;
 }
 
-.slider.as4_3 img{
+.slider.as4_3 img, .slider.as4_3 iframe{
     width: 600px;
     height: 450px;
 }
 
-.slider.as1_1 img{
+.slider.as1_1 img, .slider.as1_1 iframe{
     width: 550px;
     height: 550px;
 }
 
-.slider.as6_9 img{
+.slider.as6_9 img, .slider.as6_9 iframe{
     width: 400px;
     height: 600px;
 }

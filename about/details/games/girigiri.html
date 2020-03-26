@@ -11,47 +11,93 @@
     　　
     <link rel="stylesheet" href="/slick/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="/slick/slick.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/slick/slick.min.js" type="text/javascript"></script>　　
-    <script src="/about/js/popup.js" type="text/javascript"></script>
 </head>
 
-<div id="girigiri" class="popup_window_inner game_detail">
-    <div class="icon">
-        <img src="/about/images/games/icon_high/girigiri.gif">     <!-- ゲームのアイコン -->
-    </div>
-    <div class="title_genre">        <!-- タイトルとジャンル -->
-        <h1>ギリギリまでForever</h1>
-        <p>連打、カジュアル</p>
-    </div>
-    <div class="play_btn">
-        <a href="https://unityroom.com/games/forever-until-girigiri" class="btn-border blue"
-            target="_blank" rel="noopener">UnityRoomで遊ぶ</a>     <!-- ゲームのリンク -->
-        <a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.girigiri" class="btn-border"
-            target="_blank" rel="noopener">GooglePlayで入手</a>     <!-- ゲームのリンク -->
-    </div>
-    
-    <div class="detail">       <!-- ゲームの詳細など -->
-        <div class="screenshot">
-            <ul class="slider as9_6">      <!-- スクリーンショット -->
-                <li><img src="/about/images/games/screenshots/girigiri/sc1.png"></li>
-                <li><img src="/about/images/games/screenshots/girigiri/sc2.png"></li>
-            </ul>
+<body>
+    <div id="girigiri" class="popup_window_inner game_detail">
+        <div class="icon">
+            <img src="/about/images/games/icon_high/girigiri.gif"> <!-- ゲームのアイコン -->
         </div>
-        <a href="https://unityroom.com/unity1weeks/9" target="_blank" rel="noopener"><h1>Unity1週間ゲームジャム お題「ぎりぎり」 投稿作品</h1></a>
-        <h2>コンセプト</h2>
-        <p>シンプルな連打ゲーム</p>
-        <h2>簡単な概要</h2>
-        <p>迫りくる闇から連打で加速し逃げるゲームです。</p>
-        <h2>特徴・アピールポイント</h2>
-        <p>・アニメーションが面白い</p>
-        <p>・連打するだけの簡単なゲーム</p>
-        <h2>制作について</h2>
-        <p>使用ソフト/エンジン : Unity 2018.1 (UnityRoom版) , Unity 2019.1 (アプリ版)</p>
-        <p>個人制作</p>
-        <p>制作期間 : 約3日 (結構ガッツリ)</p>
+        <div class="title_genre">
+            <!-- タイトルとジャンル -->
+            <h1>ギリギリまでForever</h1>
+            <p>連打、カジュアル</p>
+        </div>
+        <div class="play_btn">
+            <a href="https://unityroom.com/games/forever-until-girigiri" class="btn-border blue" target="_blank"
+                rel="noopener">UnityRoomで遊ぶ</a> <!-- ゲームのリンク -->
+            <a href="https://play.google.com/store/apps/details?id=geatnium.unityandroid.girigiri" class="btn-border"
+                target="_blank" rel="noopener">GooglePlayで入手</a> <!-- ゲームのリンク -->
+        </div>
+
+        <div class="detail">
+            <!-- ゲームの詳細など -->
+            <div class="screenshot">
+                <ul class="slider as9_6">
+                    <!-- スクリーンショット -->
+                    <li><img src="/about/images/games/screenshots/girigiri/sc1.png"></li>
+                    <li><img src="/about/images/games/screenshots/girigiri/sc2.png"></li>
+                </ul>
+            </div>
+            <a href="https://unityroom.com/unity1weeks/9" target="_blank" rel="noopener">
+                <h1>Unity1週間ゲームジャム お題「ぎりぎり」 投稿作品</h1>
+            </a>
+            <h2>コンセプト</h2>
+            <p>シンプルな連打ゲーム</p>
+            <h2>簡単な概要</h2>
+            <p>迫りくる闇から連打で加速し逃げるゲームです。</p>
+            <h2>特徴・アピールポイント</h2>
+            <p>・アニメーションが面白い</p>
+            <p>・連打するだけの簡単なゲーム</p>
+            <h2>制作について</h2>
+            <p>使用ソフト/エンジン : Unity 2018.1 (UnityRoom版) , Unity 2019.1 (アプリ版)</p>
+            <p>個人制作</p>
+            <p>制作期間 : 約3日 (結構ガッツリ)</p>
+        </div>
     </div>
-</div>
+    <script>
+        // var tag = document.createElement('script');
+        // tag.src = "https://www.youtube.com/iframe_api";
+        // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // var player;
+        // function onYouTubeIframeAPIReady() {
+        //     player = new YT.Player('movie', {
+        //         height: '315',
+        //         width: '560',
+        //         videoId: 'VGZMoe-NSQo',
+        //         events: {
+        //             'onStateChange': onPlayerStateChange
+        //         }
+        //     });
+        // }
+        // function onPlayerStateChange(event) {
+        //     if (event.data == YT.PlayerState.PLAYING) {
+        //         autoPlaySlider(false);
+        //     } else {
+        //         autoPlaySlider(true);
+        //     }
+        // }
+
+        $(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+
+        function autoPlaySlider(enable) {
+            $(function () {
+                if (enable) {
+                    $('.slider').slick('slickPlay');
+                } else {
+                    $('.slider').slick('slickPause');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
