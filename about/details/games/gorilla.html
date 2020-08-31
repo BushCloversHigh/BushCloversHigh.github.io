@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/about/css/detail.css">
+    <link rel="stylesheet" href="/about/css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display|Roboto&display=swap"
+        rel="stylesheet">
+    　　
+    <link rel="stylesheet" href="/slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="/slick/slick.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/slick/slick.min.js" type="text/javascript"></script>　　
+</head>
+
+<body>
+    <div id="walk" class="popup_window_inner game_detail">
+        <div class="icon">
+            <img src="/about/images/games/icon_high/gorilla.gif">
+        </div>
+        <div class="title_genre">
+            <h1>ふえゴリラ</h1>
+            <p>オンラインチームバトル、アクション</p>
+        </div>
+        <div class="play_btn">
+            <a href="https://unityroom.com/games/fuegorilla" class="btn-border blue" target="_blank"
+                rel="noopener">UnityRoomで遊ぶ</a>
+        </div>
+        
+        <div class="detail">
+            <!-- <div class="screenshot">
+                <ul class="slider as9_6">
+                    <li><img src="/about/images/games/screenshots/walk/sc1.png"></li>
+                    <li><img src="/about/images/games/screenshots/walk/sc2.png"></li>
+                    <li><img src="/about/images/games/screenshots/walk/sc3.png"></li>
+                </ul>
+            </div> -->
+            <a href="https://unityroom.com/unity1weeks/17" target="_blank" rel="noopener"><h1>Unity1週間ゲームジャム お題「ふえる」投稿作品</h1></a>
+            <h2>コンセプト</h2>
+            <p>白熱するオンラインチームバトル！</p>
+            <h2>簡単な概要</h2>
+            <p>7対7のチーム対戦型増え鬼（増えゴリラ）です！</p>
+            <h2>特徴・アピールポイント</h2>
+            <p>・オンラインゲーム<br>・白熱したチームファイト<br>・人間とゴリラの性質を生かして協力しないと勝てない</p>
+            <h2>制作について</h2>
+            <p>使用ソフト/エンジン : Unity 2019.4</p>
+            <p>個人制作</p>
+            <p>制作期間 : 7日</p>
+            <a href="https://github.com/Geatnium/FueGorilla" target="_blank" rel="noopener">
+                <p>Githubリポジトリ</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        // var tag = document.createElement('script');
+        // tag.src = "https://www.youtube.com/iframe_api";
+        // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // var player;
+        // function onYouTubeIframeAPIReady() {
+        //     player = new YT.Player('movie', {
+        //         height: '315',
+        //         width: '560',
+        //         videoId: 'VGZMoe-NSQo',
+        //         events: {
+        //             'onStateChange': onPlayerStateChange
+        //         }
+        //     });
+        // }
+        // function onPlayerStateChange(event) {
+        //     if (event.data == YT.PlayerState.PLAYING) {
+        //         autoPlaySlider(false);
+        //     } else {
+        //         autoPlaySlider(true);
+        //     }
+        // }
+
+        $(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+
+        function autoPlaySlider(enable) {
+            $(function () {
+                if (enable) {
+                    $('.slider').slick('slickPlay');
+                } else {
+                    $('.slider').slick('slickPause');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

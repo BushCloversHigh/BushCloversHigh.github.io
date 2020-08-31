@@ -13,7 +13,7 @@
 	<meta property="twitter:description" content="あ、どうも。ギトです。ゲーム作ってます。作品紹介などを目的としてホームページを作成してみました！">
 	<meta property="twitter:image" content="https://Geatnium.github.io/about/images/Card.png">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=980">
 	<title>Geatnium</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/detail.css" rel="stylesheet" type="text/css">
@@ -45,21 +45,17 @@
 			<div class="black-background" id="js-black-bg" onclick="close_popup()"></div>
 		</div>
 
-		<header id="#header" class="top_header">
+		<header id="header" class="top_header">
 			<p class="header_logo"><a href="#">Geatnium</a></p>
 			<div class="header_menu">
 				<ul class="nav_menu">
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('aboutme')">About me</a></p>
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('games')">Games</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer"
-							onclick="clickScroll('illustrations')">Illustrations</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('modelings')">3D Models</a>
-					</p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('illustrations')">Illustrations</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('modelings')">3D Models</a></p>
 					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('blogs')">Blogs</a></p>
-					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('contacts')">SNS/Contact</a>
-					</p>
-					<p class="nav_menu_item"><a id="menu_secret" class="cursor_pointer"
-							onclick="clickScroll('secret')">　　　</a></p>
+					<p class="nav_menu_item"><a class="cursor_pointer" onclick="clickScroll('contacts')">SNS/Contact</a></p>
+					<p class="nav_menu_item"><a id="menu_secret" class="cursor_pointer" onclick="clickScroll('secret')">　　　</a></p>
 				</ul>
 			</div>
 		</header>
@@ -97,6 +93,14 @@
 				<p class="fadein up">これまでに制作したゲーム</p>
 			</div>
 			<ul class="inline_blocks square dropshadow brightness">
+				<li class="fadein up">
+					<img src="images/games/icon_low/gorilla.gif">
+					<a onclick="show_popup_game('gorilla')">
+						<figcap>
+							<br>　<br>ふえゴリラ
+						</figcap>
+					</a>
+				</li>
 				<li class="fadein up">
 					<img src="images/games/icon_low/umaumau.gif">
 					<a onclick="show_popup_game('connect_crystals')">

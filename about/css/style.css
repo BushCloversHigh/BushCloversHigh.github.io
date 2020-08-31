@@ -19,106 +19,103 @@ body.fixed {
 	left: 0;
 }
 
-.top_header {
-	background: linear-gradient(0deg, #00000000, #000000ff);
-	display: flex;
-	padding-top: 20px;
-	padding-left: 30px;
-	padding-right: 50px;
-	padding-bottom: 20px;
-	position: fixed;
-	justify-content: space-between;
-	width: 100%;
-	z-index: 100;
-	transition: all 500ms ease;
-}
+/* @media screen and (max-width:480px){
+	.top_header{
+		visibility: hidden;
+	}
+} */
 
-.header_menu {
-	padding-left: 50px;
-}
-
-.nav_menu_item, .header_logo {
-	user-select: none;
-}
-
-.top_header.visible {
-	background: #ffffff;
-	box-shadow: 0px 1px 4px #00000088;
-}
-
-.top_header .header_logo {
-	opacity: 0;
-	visibility: hidden;
-	font-family: 'Playfair Display', serif;
-	font-size: 50px;
-	font-style: italic;
-	font-weight: bold;
-	transition: all 500ms ease;
-}
-
-.top_header .header_logo a {
-	color: #333;
-	text-decoration: none;
-}
-
-.top_header .nav_menu {
-	display: flex;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.top_header .nav_menu_item {
-	border-right: solid 1px #ffffffcc;
-	margin-left: 20px;
-	padding-right: 20px;
-	transition: all 500ms ease;
-}
-
-.top_header .nav_menu_item a {
-	color: #ffffffcc;
-	font-size: 20px;
-	text-decoration: none;
-	line-height: 30px;
-	user-select: none;
-	transition: all 500ms ease;
-}
-
-.top_header.visible .header_logo {
-	opacity: 1;
-	visibility: visible;
-	font-family: 'Playfair Display', serif;
-	color: #555555;
-	font-size: 50px;
-	font-style: italic;
-	font-weight: bold;
-	vertical-align: middle;
-	transition: all 500ms ease;
-}
-
-.top_header.visible .nav_menu_item {
-	border-right: solid 1px #555555;
-	margin-left: 20px;
-	padding-right: 20px;
-	transition: all 500ms ease;
-}
-
-.top_header.visible .nav_menu_item a {
-	color: #555555;
-	font-size: 20px;
-	text-decoration: none;
-	line-height: 30px;
-	transition: all 500ms ease;
-}
+/* @media screen and (min-width:480px) { */
+	.top_header {
+		background: linear-gradient(0deg, #00000000, #000000ff);
+		display: flex;
+		padding-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		position: fixed;
+		justify-content: space-between;
+		width: 100%;
+		z-index: 100;
+		transition: all 500ms ease;
+	}
+	.header_menu {
+		padding-left: 50px;
+	}
+	.nav_menu_item, .header_logo {
+		user-select: none;
+	}
+	.top_header.visible {
+		background: #ffffff;
+		box-shadow: 0px 1px 4px #00000088;
+	}
+	.top_header .header_logo {
+		opacity: 0;
+		visibility: hidden;
+		font-family: 'Playfair Display', serif;
+		font-size: 50px;
+		font-style: italic;
+		font-weight: bold;
+		transition: all 500ms ease;
+	}
+	.top_header .header_logo a {
+		color: #333;
+		text-decoration: none;
+	}
+	.top_header .nav_menu {
+		display: flex;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.top_header .nav_menu_item {
+		border-right: solid 1px #ffffffcc;
+		margin-left: 10px;
+		padding-right: 10px;
+		transition: all 500ms ease;
+	}
+	.top_header .nav_menu_item a {
+		color: #ffffffcc;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 30px;
+		user-select: none;
+		transition: all 500ms ease;
+	}
+	.top_header.visible .header_logo {
+		opacity: 1;
+		visibility: visible;
+		font-family: 'Playfair Display', serif;
+		color: #555555;
+		font-size: 50px;
+		font-style: italic;
+		font-weight: bold;
+		vertical-align: middle;
+		transition: all 500ms ease;
+	}
+	.top_header.visible .nav_menu_item {
+		border-right: solid 1px #555555;
+		margin-left: 10px;
+		padding-right: 10px;
+		transition: all 500ms ease;
+	}
+	.top_header.visible .nav_menu_item a {
+		color: #555555;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 30px;
+		transition: all 500ms ease;
+	}
+/* } */
 
 #main_image {
 	display: table;
-	width: 100%;
+	width: 100vw;
 	height: 120vh;
 	background-size: cover;
 }
 
 #main_image_inner {
-	width: 100%;
+	width: 100vw;
 	height: 120vh;
 	background: url("../images/yozora.png") no-repeat;
 	background-attachment: fixed;
@@ -154,7 +151,7 @@ body.fixed {
 	animation: GradationAnim 10s linear infinite;
 }
 
-#main_title p{
+#main_title p {
 	margin-top: 35vh;
 }
 
@@ -222,12 +219,10 @@ body.fixed {
 	margin: auto;
 }
 
-#aboutme {
-	display: table;
-	text-align: center;
-	width: 100%;
-	padding-top: 170px;
-	padding-bottom: 100px;
+@media screen and (max-width:480px) {
+	#main_title {
+		font-size: 75px;
+	}
 }
 
 .heading {
@@ -273,6 +268,11 @@ body.fixed {
 	color: #777;
 }
 
+.text {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .text h1 {
 	font-size: 25px;
 	line-height: 40px;
@@ -285,12 +285,31 @@ body.fixed {
 	line-height: 35px;
 }
 
+@media screen and (max-width:480px) {
+	.heading h1 {
+		font-size: 37px;
+	}
+	.heading h2 {
+		font-size: 27px;
+	}
+	.text h1 {
+		font-size: 20px;
+	}
+	.text p {
+		font-size: 14px;
+	}
+}
+
 .unit {
 	display: table;
-	width: 100%;
+	width: 100vw;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
+}
+
+#aboutme.unit {
+	padding-top: 140px;
 }
 
 .unit.white {
@@ -386,6 +405,28 @@ body.fixed {
 	transition: all 200ms ease;
 }
 
+@media screen and (max-width:480px) {
+	.inline_blocks {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.inline_blocks li {
+		margin: 5px 5px;
+	}
+	.inline_blocks li img {
+		width: 150px;
+		height: 150px;
+	}
+	.inline_blocks.square li img, .inline_blocks.square li figcap {
+		width: 150px;
+		height: 150px;
+	}
+	.inline_blocks.hrect li img, .inline_blocks.hrect li figcap {
+		width: 90vw;
+		height: 70vw;
+	}
+}
+
 #contacts .inline_blocks li img {
 	width: 400px;
 	height: 400px;
@@ -400,6 +441,20 @@ body.fixed {
 	border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
 	object-fit: cover;
 	object-position: top;
+}
+
+@media screen and (max-width:480px) {
+	#contacts .inline_blocks li img {
+		width: 300px;
+		height: 300px;
+	}
+	#contacts .inline_blocks li .yoko {
+		width: 350px;
+		height: 175px;
+	}
+	.inline_blocks li figcap {
+		font-size: 14px;
+	}
 }
 
 #secret {
@@ -471,8 +526,8 @@ body.fixed {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	z-index: 2000;
 	opacity: 0;
 	visibility: hidden;
@@ -496,6 +551,12 @@ body.fixed {
 	z-index: 2500;
 	border-radius: 2%;
 	box-shadow: 10px 10px 100px #000000ff;
+}
+
+@media screen and (max-width:480px) {
+	.popup-inner {
+		width: 90vw;
+	}
 }
 
 .popup-inner iframe {

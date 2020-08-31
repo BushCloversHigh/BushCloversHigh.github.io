@@ -1,0 +1,11 @@
+#gameContainer {
+    width: 900px;
+    height: 300px;
+}
+
+@media screen and (max-width:480px) {
+    #gameContainer {
+        width: 370px;
+        height: 124px;
+    }
+}
